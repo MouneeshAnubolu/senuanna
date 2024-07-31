@@ -1,0 +1,319 @@
+.hed {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://picsum.photos/2000/1000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    height: 100vh; 
+  }
+  .project-details {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 20vh;
+    width: 30vh;
+    border: 2px solid rgb(78, 50, 50);
+    text-align: center;
+    background-color: #a95b5b;
+    padding: 1rem;
+    border: 1px solid #b85151;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(10px);
+    transition: transform 0.3s ease-in-out;
+    
+    
+  }
+  
+  .sidebar h3:hover .project-details {
+    display: block;
+    transform: translateY(0);
+  }
+  
+  .project-details:before {
+    content: "";
+    display: block;
+    width: 10vh;
+    height: 2px;
+    background-color: #e11717;
+    transition: width 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .project-details li{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-top: 2vh;
+    margin-left: 2vh;
+  }
+  
+  .project-details:after {
+    content: "";
+    display: block;
+    width: 10vh;
+    height: 2px;
+    background-color: #bc0808;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  .project-details:hover:before {
+    width: 100%;
+  }
+  
+  .project-details:hover:after {
+    width: 100%;
+    position: relative;
+    background-color: chartreuse;
+  }
+.watercolor-link {
+  background-image: url('watercolor-background.jpg');
+  background-size: 100% 100%;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+}
+
+.watercolor-link:hover {
+  background-image: url('watercolor-background-hover.jpg');
+}
+
+.watercolor-details {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 45%;
+    color: #fff;
+    position: relative;
+    width: 100px;
+  }
+  .logo:hover {
+    box-shadow: 1px 1px 10px yellow;
+  }
+  
+ .logo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ccc;
+    transition: width 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+ .logo:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    background-color: #ccc;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    
+  }
+  
+ .logo:hover:before {
+    width: 0;
+  }
+  
+ .logo:hover:after {
+    width: 0;
+    
+  }
+  
+ .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+ .sidebar h3 {
+    margin: 0;
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+  }
+  
+ .sidebar h3:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #e11717;
+    transition: width 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+ .sidebar h3:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #bc0808;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0   ;
+    left: 0;
+    overflow: hidden;
+  }
+  
+ .sidebar h3:hover {
+    background-color: #0d779536;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px yellow;
+  }
+  
+ .sidebar h3:hover:before {
+    width: 0;
+   
+  
+  }
+  
+ .sidebar h3:hover:after {
+    width: 100%;
+    position: relative;
+    background-color: chartreuse;
+  }
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  
+  .sidebar h3 {
+    margin: 0;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+
+  .input {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .input input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+  
+  .input button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .input button:hover {
+    background-color: #444;
+    
+  }
+  .content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    margin-top: 20vh;
+    text-align: start;
+
+  }
+  .inppl{
+    background-color: rgb(244, 244, 142);
+    width: 90px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  .lin{
+    color: rgb(117, 190, 34);
+  }
+
+  
+  .side-box{
+    text-align: center;
+    position: relative;
+    top: 35%;
+    right: 90px;
+    border: 2px solid black;
+    background-color: black;
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+.sedin{
+  display: flex;
+  flex-direction: column;
+}
+.sedout{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.btn-btt{
+  width: 90px;
+  height: 25px;
+  margin-left: 15vh;
+  background-color: rgb(184, 220, 65);
+  color: rgb(101, 201, 115);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.innt{
+  width: 70%;
+  height: 25px;
+  margin-left: 15vh;
+  margin-left: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.btn-bt{
+  width: 90px;
+  height: 25px;
+  margin-left: 15vh;
+  background-color: rgb(184, 220, 65);
+  color: rgb(101, 201, 115);
+  border-radius: 20px;
+}
+.Item{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+.itm{
+  text-align: start;
+}
